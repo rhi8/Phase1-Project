@@ -4,34 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <!--   <script src="function.js"></script>-->
-    <script type="text/JavaScript">
-        function connectAll() {
-                    var formData = readForm()
-                    display(formData)
-        }
-        function readForm() {
-            var formData = document.getElementById("textarea").value;
-            return  formData
-        }
-        function display(data) {
-        let newDiv = document.createElement('div');
-        newDiv.id="test"
-        newDiv.innerHTML=data;
-        document.body.appendChild(newDiv)
-        var list = document.getElementById("test");
-        list.insertBefore(newDiv, list.childNodes[0]);
-        
-        
-        
-    
-        
-        
-        
-            
-            
-        }
-    </script>
+    <script src="function.js"></script>
 </head>
 <body>
     <!--NavLinkCompleted-->
