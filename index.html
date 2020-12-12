@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!--   <script src="function.js"></script>-->
+    <script type="text/JavaScript">
+        function connectAll() {
+                    var formData = readForm()
+                    display(formData)
+        }
+        function readForm() {
+            var formData = document.getElementById("textarea").value;
+            return  formData
+        }
+        function display(data) {
+        let newDiv = document.createElement('div');
+        newDiv.id="test"
+        newDiv.innerHTML=data;
+        document.body.appendChild(newDiv)
+        var list = document.getElementById("test");
+        list.insertBefore(newDiv, list.childNodes[0]);
+        
+        
+        
+    
+        
+        
+        
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <!--NavLinkCompleted-->
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> </li>             
+                <li><a href="contactus.html">contact us</a> </li>             
+                <li><a href="gallery.html">Gallery </a></li>             
+                <li><a href="landmark.html">landmark</a> </li>             
+                <li><a href="account.html">Create Account</a> </li>             
+            </ul>
+        </nav>
+        <div>
+            <h1>The paradise Island of Mauritius</h1>
+        </div>
+    </div>  
+    <!-- blog input -->
+    <div>
+        <div>
+            <div>
+                <h4>Please input your blog content.</h4>  
+            </div>
+            <div>
+                <form>
+                    <textarea textarea rows="5" cols="75" name="textarea" id="textarea"></textarea><br>
+                    <button type="button" value="Submit" onclick="connectAll()">Submit</button>
+                    <button type="reset" value="Reset">Reset</button>
+                </form>
+                <div id="test"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
