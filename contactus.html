@@ -3,32 +3,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ContactUs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body class= "jumbotron">
     <!-- navlink-->
-    <div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a> </li>             
-                <li><a href="contactus.html">contact us</a> </li>             
-                <li><a href="gallery.html">Gallery </a></li>             
-                <li><a href="landmark.html">landmark</a> </li>             
-                <li><a href="account.html">Create Account</a> </li>             
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light justify-content-center ">
+            <ul class="nav nav-pills">
+                <li class="nav-link"><a href="index.html">Home</a> </li>             
+                <li class="nav-link"><a href="contactus.html">contact us</a> </li>             
+                <li class="nav-link"><a href="gallery.html">Gallery </a></li>             
+                             
             </ul>
         </nav>
     </div>
     <!-- contact us-->
     <div>
-        <h1>ContactUs</h1>
+        <div>
+            <h1>ContactUs</h1>
+        </div>
+        <div class="mb-3">
             <form>
-            <label>Full Name</label>
-            <input type="text" name="Contactus" id="fullname"><br>
-            <label>Email</label>
-            <input type="email" name="contactus" id="emailtext"><br>
-            <label>Enter you message</label>
-            <input type="textarea"><br>
-            <input type="submit">
-        </form>
+                <label class="form-label">Full Name</label>
+                <input class="form-control form-control-lg" type="text" name="Contactus" id="fullname"><br>
+                <label class="form-label">Email</label>
+                <input class="form-control form-control-lg" type="email" name="contactus" id="emailtext"><br>
+                <label class="form-label">Enter you message</label><br>
+                <textarea  class="form-control"textarea rows="5" cols="50" name="textarea" id="textarea"></textarea><br>
+                <input  class="btn btn-success" type="submit">
+            </form>
+        </div>
     </div>
 </body>
 </html>

@@ -5,36 +5,37 @@
     <title>Home</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="function.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body class= "jumbotron">
     <!--NavLinkCompleted-->
-    <div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a> </li>             
-                <li><a href="contactus.html">contact us</a> </li>             
-                <li><a href="gallery.html">Gallery </a></li>             
-                <li><a href="landmark.html">landmark</a> </li>             
-                <li><a href="account.html">Create Account</a> </li>             
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light justify-content-center ">
+            <ul class="nav nav-pills"> 
+                <li class="nav-link"><a href="index.html">Home</a> </li>             
+                <li class="nav-link"><a href="contactus.html">contact us</a> </li>             
+                <li class="nav-link"><a href="gallery.html">Gallery </a></li>             
+                             
+                             
             </ul>
         </nav>
         <div>
-            <h1>The paradise Island of Mauritius</h1>
+            <h1 lass="display-4">The paradise Island of Mauritius</h1>
         </div>
     </div>  
     <!-- blog input -->
     <div>
         <div>
             <div>
-                <h4>Please input your blog content.</h4>  
+                <h4 class="text-muted"  >Please input your blog content.</h4>  
             </div>
             <div>
                 <form>
-                    <textarea textarea rows="5" cols="75" name="textarea" id="textarea"></textarea><br>
-                    <button type="button" value="Submit" onclick="connectAll()">Submit</button>
-                    <button type="reset" value="Reset">Reset</button>
+                    <textarea class="form-control" textarea rows="5" cols="75" name="textarea" id="textarea"></textarea><br>
+                    <button class="btn btn-success" type="button" value="Submit" onclick="connectAll() ">Submit</button>
+                    <button class="btn btn-secondary" type="reset" value="Reset">Reset</button>
                 </form>
-                <div id="test"></div>
+                <div class="display-6" id="test" ></div>
             </div>
         </div>
     </div>
